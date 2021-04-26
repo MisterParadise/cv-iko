@@ -1,0 +1,12 @@
+<app-info></app-info>
+<app-navigation></app-navigation>
+<app-link></app-link>
+<div class="language-selection">
+    <mat-form-field>
+        <mat-label>{{languageSelectionPhrase}}</mat-label>
+        <mat-select [(value)]="languageSelection" (selectionChange)="onSwitchLanguage()">
+            <mat-option [value]="Language.ENGLISH">{{Language.ENGLISH}}</mat-option>
+            <mat-option [value]="Language.FRENCH">{{Language.FRENCH}}</mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

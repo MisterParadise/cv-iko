@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .language-selection {
+        width: 50%;
+        
+        mat-form-field {
+            width: 100%;
+        }
+    }
+}

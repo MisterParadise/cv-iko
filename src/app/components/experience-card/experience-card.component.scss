@@ -1,0 +1,32 @@
+:host {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #f8f8f8;
+    border-radius: 5px;
+    margin: 2px;
+    justify-content: space-between;
+
+    .experience-card-company {
+        min-width: 50%;
+    }
+
+    .experience-card-dateIn {
+
+    }
+
+    .experience-card-title {
+        width: 100%;
+    }
+
+    
+
+    .experience-card-location {
+        flex-grow: 1;
+    }
+
+    .experience-card-description {
+        width: 100%
+    }
+
+    
+}
