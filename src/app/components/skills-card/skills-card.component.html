@@ -1,1 +1,2 @@
-<p>skills-card works!</p>
+<h3>{{data.title}}</h3>
+<app-sticker *ngFor="let sticker of data.stickers" [label]="sticker.label" [logoUrl]="sticker.logoUrl"></app-sticker>

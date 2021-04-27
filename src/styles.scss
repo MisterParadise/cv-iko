@@ -1,3 +1,4 @@
+@import 'src/assets/styles/global.scss';
 
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
@@ -32,7 +33,3 @@ $cv-iko-theme: mat-light-theme((
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($cv-iko-theme);
-
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

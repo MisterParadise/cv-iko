@@ -1,2 +1,14 @@
-<a href="https://github.com/MisterParadise">github</a>
-<a href="https://www.linkedin.com/in/ivan-kolodziejczyk-19006ab1/">linkedin</a>
+<!-- <svg-icon class="icon-svg" src="assets/img/github.svg" [svgStyle]="{ 'width.px':30 }" (click)="goToLink('https://github.com/MisterParadise')"></svg-icon>
+<svg-icon class="icon-svg" src="assets/img/linkedin.svg" [svgStyle]="{ 'width.px':30 }" (click)="goToLink('https://www.linkedin.com/in/ivan-kolodziejczyk-19006ab1/')"></svg-icon>
+<a href="mailto:test@test.com">
+    <svg-icon class="icon-svg" src="assets/img/mail.svg" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+</a> -->
+
+<div *ngFor="let link of links">
+    <a *ngIf="isEmail(link)" [href]="'mailto:' + link.email">
+        <svg-icon class="icon-svg"  [src]="link.pictoUrl" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+    </a>
+    <a target="_blank" *ngIf="!isEmail(link)" [href]="link.url">
+        <svg-icon class="icon-svg" [src]="link.pictoUrl" [svgStyle]="{ 'width.px':30 }"></svg-icon>
+    </a>
+</div>

@@ -1,0 +1,26 @@
+$primary-font-color: #000000;
+$secondary-font-color: #FFFFFF;
+
+$primary-background-color: #FFFFFF;
+$secondary-background-color: #F8F8F8;
+$third-background-color: #DFDFDF;
+
+$hover-color: #3f51b5;
+
+$transition-time: 0.2s;
+$transition-pattern: ease-out;
+
+@mixin primary-background-color {
+    color: $primary-font-color;
+    background-color: $primary-background-color;
+}
+
+@mixin secondary-background-color {
+    color: $primary-font-color;
+    background-color: $secondary-background-color;
+}
+
+@mixin hover-color {
+    color: $secondary-font-color;
+    background-color: $hover-color;
+}

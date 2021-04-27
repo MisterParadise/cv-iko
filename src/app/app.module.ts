@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './components/main/main.component';
 import { DetailsComponent } from './components/details/details.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { InfoComponent } from './components/info/info.component';
 import { LinkComponent } from './components/link/link.component';
 import { DataLanguageService } from './services/data-language.service';
@@ -17,6 +16,9 @@ import { ProjectCardComponent } from './components/project-card/project-card.com
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
+import { HttpClientModule } from '@angular/common/http';
+import { AngularSvgIconModule } from 'angular-svg-icon';
+import { StickerComponent } from './components/sticker/sticker.component';
 
 @NgModule({
   declarations: [
@@ -24,20 +26,22 @@ import { MatSelectModule } from '@angular/material/select';
     MainComponent,
     DetailsComponent,
     NavigationComponent,
-    ContactComponent,
     InfoComponent,
     LinkComponent,
     ExperienceCardComponent,
     EducationCardComponent,
     SkillsCardComponent,
     HobbyCardComponent,
-    ProjectCardComponent
+    ProjectCardComponent,
+    StickerComponent
   ],
   imports: [
     BrowserModule,
     NoopAnimationsModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    HttpClientModule,
+    AngularSvgIconModule.forRoot()
   ],
   providers: [
     DataLanguageService

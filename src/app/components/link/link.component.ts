@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { CvModelLang, Link } from 'src/app/models/cv.model';
+import { DataLanguageService } from 'src/app/services/data-language.service';
 
 @Component({
   selector: 'app-link',
@@ -7,9 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LinkComponent implements OnInit {
 
-  constructor() { }
+  links: Link[];
+  linkSubscription: Subscription;
 
-  ngOnInit(): void {
+  constructor(private dataLanguageService: DataLanguageService) { 
+    this.linkSubscription = this.dataLanguageService.cvInfosSubject.subscribe(
+      (cvInfos: CvModelLang) => {
+        this.links = cvInfos.links;
+      }
+    );
   }
 
+  ngOnInit(): void {
+    this.dataLanguageService.emitCvInfosSubject();
+  }
+
+  isEmail(link: Link) {
+    return !!link.email;
+  }
 }

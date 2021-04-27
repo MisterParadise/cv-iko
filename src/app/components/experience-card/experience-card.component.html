@@ -3,4 +3,7 @@
 <h4 class="experience-card-title">{{data.title}}</h4>
 <h5 class="experience-card-location">{{data.location}}</h5>
 <p class="experience-card-description">{{data.description}}</p>
+<div class="experience-card-stickers">
+    <app-sticker *ngFor="let sticker of data.stickers" [label]="sticker.label" [logoUrl]="sticker.logoUrl"></app-sticker>
+</div>
 

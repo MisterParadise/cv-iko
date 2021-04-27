@@ -15,7 +15,25 @@ export const IKO_DATA:  CvModel = {
                 company:"Sopra Steria",
                 location:"Nantes, France",
                 dateIn: new Date("2019, 2, 11"),
-                description: "MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION "
+                description: "MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION ",
+                stickers: [
+                    {
+                        label: "Angular",
+                        logoUrl: "assets/img/angular.svg"
+                    },
+                    {
+                        label: "Maven"
+                    }, 
+                    {
+                        label: "HTML5"
+                    },
+                    {
+                        label: "CSS3"
+                    },
+                    {
+                        label: "SCSS"
+                    }
+                ]
             },
             {
                 title:"Stagiaire ingénieur biomédical",
@@ -34,6 +52,45 @@ export const IKO_DATA:  CvModel = {
                 title: "DUT Mesures Physique",
                 location: "Annecy",
                 dateIn: new Date("2012,9,1")
+            }
+        ],
+        skills: [
+            {
+                title: "Compétences informatiques",
+                stickers: [{
+                    label: "Angular",
+                    logoUrl: "assets/img/angular.svg"
+                }, {
+                    label: "Maven"
+                }, {
+                    label: "Spark"
+                }, {
+                    label: "Java"
+                }]
+            }
+        ],
+        hobbies: [
+            {
+                title: "Guitare"
+            },
+            {
+                title: "Sciences"
+            },
+            {
+                title: "Jeux vidéos"
+            }
+        ],
+        links: [
+            {
+                pictoUrl: "assets/img/github.svg",
+                url: "https://github.com/MisterParadise"
+            },
+            {
+                pictoUrl: "assets/img/linkedin.svg",
+                url: "https://www.linkedin.com/in/ivan-kolodziejczyk-19006ab1/"
+            }, {
+                pictoUrl: "assets/img/mail.svg",
+                email: "ivan.kolodziejczyk@gmail.com"
             }
         ]
     }, {

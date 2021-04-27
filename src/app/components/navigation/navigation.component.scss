@@ -1,7 +1,20 @@
+@import '/src/assets/styles/colors.scss';
+
 :host {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     min-height: 30%;
     align-items: center;
+
+    .nav-link {
+        transition: color $transition-time $transition-pattern;
+        font-weight: 500;
+
+        &:hover {
+            cursor: pointer;
+            color: $hover-color;
+        }
+    }
+    
 }

@@ -1,7 +1,18 @@
+@import '/src/assets/styles/colors.scss';
+
 :host {
     min-height: 10%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
+    width: 50%;
+
+    .icon-svg {
+        color: $primary-font-color;
+        transition: color $transition-time $transition-pattern;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
 }
