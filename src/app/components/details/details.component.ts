@@ -16,6 +16,7 @@ export class DetailsComponent implements OnInit {
   skills: Skill[];
   hobbies: Hobby[];
   projects: Project[];
+  noDateOutPlaceholder: string;
 
   menuInfos: MenuModelLanguage;
 

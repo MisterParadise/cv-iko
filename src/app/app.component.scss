@@ -3,6 +3,7 @@
 $main-width: 300px;
 $main-padding: 25px; 
 $details-width: calc(100% - #{$main-width} - (2* #{$main-padding}));
+$details-left: calc(#{$main-width} + 2* #{$main-padding});
 
 :host {
     display: block;
@@ -24,9 +25,9 @@ $details-width: calc(100% - #{$main-width} - (2* #{$main-padding}));
 
     app-details {
         display:flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         position:absolute;
-        left: 350px;
+        left: $details-left;
         width: $details-width;
 
         @include primary-background-color;

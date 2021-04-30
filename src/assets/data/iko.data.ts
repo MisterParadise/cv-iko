@@ -14,24 +14,36 @@ export const IKO_DATA:  CvModel = {
                 title:"Développeur Full-Stack",
                 company:"Sopra Steria",
                 location:"Nantes, France",
-                dateIn: new Date("2019, 2, 11"),
-                description: "MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION ",
-                stickers: [
-                    {
-                        label: "Angular",
+                dateIn: "02/2019",
+                dateOut: "Aujourd'hui",
+                descriptions: [ "07/2020 - Aujourd'hui : Développeur Big Data pour un client dans le secteur de l'énergie.", 
+                "02/2019 - 07/2020 : Développeur fullstack sur un portail web de suivi de consommation énergétique." ],
+                stickers: [{
+                        label: "Angular 6",
                         logoUrl: "assets/img/angular.svg"
-                    },
-                    {
+                    }, {
+                        label: "Java",
+                        logoUrl: "assets/img/java.svg"
+                    },  {
+                        label: "HTML5",
+                        logoUrl: "assets/img/html5.svg"
+                    }, {
+                        label: "SCSS",
+                        logoUrl: "assets/img/sass.svg"
+                    }, {
+                        label: "Spring"
+                    }, {
                         label: "Maven"
-                    }, 
-                    {
-                        label: "HTML5"
-                    },
-                    {
-                        label: "CSS3"
-                    },
-                    {
-                        label: "SCSS"
+                    }, {
+                        label: "Git",
+                        logoUrl: "assets/img/git.svg"
+                    }, {
+                        label: "Jenkins",
+                        logoUrl: "assets/img/jenkins.svg"
+                    }, {
+                        label: "Openshift"
+                    }, {
+                        label: "Hadoop"
                     }
                 ]
             },
@@ -39,19 +51,21 @@ export const IKO_DATA:  CvModel = {
                 title:"Stagiaire ingénieur biomédical",
                 company:"INL",
                 location: "Villeurbanne, France",
-                dateIn: new Date("2016,1,1")
+                dateIn: "01/2016",
+                dateOut: "09/2016",
+                descriptions: ["Petit description de ses morts"]
             }
         ],
         education: [
             {
                 title: "Ingénieur biomédical",
                 location: "Villeurbanne",
-                dateIn: new Date("2014,9,1")
+                dateIn: "09/2014"
             }, 
             {
                 title: "DUT Mesures Physique",
                 location: "Annecy",
-                dateIn: new Date("2012,9,1")
+                dateIn: "09/2012"
             }
         ],
         skills: [

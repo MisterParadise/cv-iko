@@ -1,24 +1,24 @@
-<div id="detailexperiences">
-    <h2>{{menuInfos.experiences}}</h2>
+<div id="detailexperiences" class="detail-category">
+    <h2 class="detail-title">{{menuInfos.experiences}}</h2>
     <app-experience-card  *ngFor="let experience of experiences" [data]="experience"></app-experience-card>
 </div>
 
-<div id="detaileducations">
-    <h2>{{menuInfos.education}}</h2>
+<div id="detaileducations" class="detail-category">
+    <h2 class="detail-title">{{menuInfos.education}}</h2>
     <app-education-card *ngFor="let education of educations" [data]="education"></app-education-card>
 </div>
 
-<div id="detailskills">
-    <h2>{{menuInfos.skills}}</h2>
+<div id="detailskills" class="detail-category">
+    <h2 class="detail-title">{{menuInfos.skills}}</h2>
     <app-skills-card *ngFor="let skill of skills" [data]="skill"></app-skills-card>
 </div>
 
-<div id="detailhobbies">
-    <h2>{{menuInfos.hobbies}}</h2>
+<div id="detailhobbies" class="detail-category">
+    <h2 class="detail-title">{{menuInfos.hobbies}}</h2>
     <app-hobby-card *ngFor="let hobby of hobbies" [data]="hobby"></app-hobby-card>
 </div>
 
-<div id="detailprojects">
-    <h2>{{menuInfos.projects}}</h2>
+<div id="detailprojects" class="detail-category">
+    <h2 class="detail-title">{{menuInfos.projects}}</h2>
     <app-project-card *ngFor="let project of projects" [data]="project"></app-project-card>
 </div>

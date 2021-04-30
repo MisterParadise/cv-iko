@@ -1,5 +1,14 @@
-:host{
-    display: flex;
-    flex-direction: column;
-    height: 5000px;
+:host {
+
+    .detail-category {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width:100%;
+    }
+
+    .detail-title{
+        margin-left: 20px;
+    }
 }

@@ -2,34 +2,93 @@
 
 :host {
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
     background-color: $secondary-background-color;
     border-radius: 5px;
-    margin: 25px;
-    justify-content: space-between;
-    
+    margin: 20px;
+    margin-bottom: 0px;
+    padding: 20px;
 
-    .experience-card-company {
-        min-width: 50%;
-    }
-
-    .experience-card-dateIn {
-
-    }
-
-    .experience-card-title {
+    .experience-card-header {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
         width: 100%;
-    }
 
+        .experience-card-company {
+            flex-grow: 1;
+            margin-bottom: 5px;
+        }
     
-
-    .experience-card-location {
-        flex-grow: 1;
-    }
-
-    .experience-card-description {
-        width: 100%
-    }
-
+        .experience-card-dates {
+            color: #808080;
+            font-style: italic;
+        }
     
+        .experience-card-title, .experience-card-location {
+            flex: 0 0 100%;
+            margin-bottom: 3px;
+        }
+    }
+
+    .experience-card-content {
+        width:100%;
+        display: flex;
+        flex-direction: column;
+
+
+        .experience-card-description {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .experience-card-description-separator {
+                display: block;
+                height: 30px;
+                width: 2px;
+                margin: 10px;
+                background-color: #808080;
+            }
+        }
+
+        .experience-card-stickers {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+
+            app-sticker {
+                margin: 5px 10px 5px 0;
+            }
+        }
+
+    }
+
+    .experience-card-footer {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .experience-card-footer-arrow {
+
+            height: 20px;
+            cursor: pointer;
+            color: $primary-font-color;
+            transition: color $transition-time $transition-pattern, transform $transition-time;
+            transform: rotate( 0deg );
+
+            &:hover {
+                color: $hover-color;
+            }
+
+            &.arrow-up{
+                transform: rotate( 180deg );
+            }
+
+        }
+    }
 }

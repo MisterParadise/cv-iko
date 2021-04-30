@@ -13,7 +13,7 @@ import { EducationCardComponent } from './components/education-card/education-ca
 import { SkillsCardComponent } from './components/skills-card/skills-card.component';
 import { HobbyCardComponent } from './components/hobby-card/hobby-card.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
@@ -41,7 +41,8 @@ import { StickerComponent } from './components/sticker/sticker.component';
     MatFormFieldModule,
     MatSelectModule,
     HttpClientModule,
-    AngularSvgIconModule.forRoot()
+    AngularSvgIconModule.forRoot(),
+    BrowserAnimationsModule
   ],
   providers: [
     DataLanguageService

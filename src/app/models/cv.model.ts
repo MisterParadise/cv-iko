@@ -33,9 +33,9 @@ export type Experience = {
     title: string,
     company: string,
     location: string,
-    description?: string,
-    dateIn: Date,
-    dateOut?: Date,
+    descriptions?: string[],
+    dateIn: string,
+    dateOut: string,
     stickers?: Sticker[]
 }
 
@@ -43,8 +43,8 @@ export type Education = {
     title: string,
     location: string,
     description?: string,
-    dateIn: Date;
-    dateOut?: Date,
+    dateIn: string;
+    dateOut?: string,
     stickers?: Sticker[]
 }
 

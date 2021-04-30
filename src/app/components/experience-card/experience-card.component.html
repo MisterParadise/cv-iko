@@ -1,9 +1,27 @@
-<h3 class="experience-card-company">{{data.company}}</h3>
-<div class="experience-card-dateIn">{{data.dateIn | date: 'MM/yyyy'}}</div>
-<h4 class="experience-card-title">{{data.title}}</h4>
-<h5 class="experience-card-location">{{data.location}}</h5>
-<p class="experience-card-description">{{data.description}}</p>
-<div class="experience-card-stickers">
-    <app-sticker *ngFor="let sticker of data.stickers" [label]="sticker.label" [logoUrl]="sticker.logoUrl"></app-sticker>
+<div class="experience-card-header">
+    <h3 class="experience-card-company">{{data.company}}</h3>
+    <div class="experience-card-dates">{{data.dateIn}} - {{data.dateOut}}</div>
+    <h4 class="experience-card-title">{{data.title}}</h4>
+    <h5 class="experience-card-location">{{data.location}}</h5>
+
+</div>
+
+
+
+<div *ngIf="openTab" class="experience-card-content" [@expandExperienceCard]>
+    <div class="experience-card-description">
+        <div *ngFor="let description of data.descriptions; let isLast = last">
+            <p>{{description}}</p>
+            <span class="experience-card-description-separator" *ngIf="!isLast"></span>
+        </div>
+    </div>
+    <div class="experience-card-stickers">
+        <app-sticker *ngFor="let sticker of data.stickers" [label]="sticker.label" [logoUrl]="sticker.logoUrl"></app-sticker>
+    </div>
+</div>
+<div class="experience-card-footer">
+    <div class="experience-card-footer-arrow" [ngClass]="{'arrow-up': openTab}" >
+        <svg-icon [src]="'assets/img/chevron-down.svg'" (click)="switchOpenTabStatus()" [svgStyle]="{ 'width.px':20 }"></svg-icon>
+    </div>
 </div>
 
