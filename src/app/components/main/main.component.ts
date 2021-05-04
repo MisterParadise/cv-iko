@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, Input, OnInit } from '@angular/core';
 import { Language } from 'src/app/constants/constants';
 import { DataLanguageService } from 'src/app/services/data-language.service';
 import { MenuModelLanguage } from 'src/app/models/menu.model';
@@ -11,7 +11,6 @@ import { Subscription } from 'rxjs';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-
   languageSelection: Language;
   Language = Language;
   
@@ -35,5 +34,4 @@ export class MainComponent implements OnInit {
   onSwitchLanguage() {
     this.dataLanguageService.switchLanguage(this.languageSelection);
   }
-
 }

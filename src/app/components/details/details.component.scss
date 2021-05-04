@@ -1,4 +1,19 @@
+@import '/src/assets/styles/global.scss';
+
 :host {
+
+    .detail-mobile-header {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        
+        @media screen and (max-width: $small-screen-maxwidth) {
+            height: 100vh;
+        }
+    }
 
     .detail-category {
         display: flex;
@@ -6,6 +21,13 @@
         margin-top: 20px;
         margin-bottom: 20px;
         width:100%;
+
+        .detail-category-skills {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
     }
 
     .detail-title{

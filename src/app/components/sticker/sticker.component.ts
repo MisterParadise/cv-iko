@@ -9,6 +9,9 @@ export class StickerComponent implements OnInit {
 
   @Input() label: string;
   @Input() logoUrl: string;
+  @Input() rating: number;
+
+  displayRating: boolean = false;
 
   constructor() { }
 
@@ -18,4 +21,13 @@ export class StickerComponent implements OnInit {
   isLogoUrlProvided() {
     return !!this.logoUrl;
   }
+
+  onMouseEnter() {
+    this.displayRating = true;
+  }
+
+  onMouseLeave() {
+    this.displayRating = false;
+  }
+
 }

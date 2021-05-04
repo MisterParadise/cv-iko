@@ -1,3 +1,8 @@
+<div *ngIf="isMobile()" class="detail-mobile-header">
+    <app-info></app-info>
+    <app-link></app-link>
+</div>
+
 <div id="detailexperiences" class="detail-category">
     <h2 class="detail-title">{{menuInfos.experiences}}</h2>
     <app-experience-card  *ngFor="let experience of experiences" [data]="experience"></app-experience-card>
@@ -5,12 +10,15 @@
 
 <div id="detaileducations" class="detail-category">
     <h2 class="detail-title">{{menuInfos.education}}</h2>
-    <app-education-card *ngFor="let education of educations" [data]="education"></app-education-card>
+    <app-experience-card *ngFor="let education of educations" [data]="education"></app-experience-card>
 </div>
 
 <div id="detailskills" class="detail-category">
     <h2 class="detail-title">{{menuInfos.skills}}</h2>
-    <app-skills-card *ngFor="let skill of skills" [data]="skill"></app-skills-card>
+    <div class="detail-category-skills">
+        <app-skills-card *ngFor="let skill of skills" [data]="skill"></app-skills-card>
+    </div>
+    
 </div>
 
 <div id="detailhobbies" class="detail-category">

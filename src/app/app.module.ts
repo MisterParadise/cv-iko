@@ -9,7 +9,6 @@ import { InfoComponent } from './components/info/info.component';
 import { LinkComponent } from './components/link/link.component';
 import { DataLanguageService } from './services/data-language.service';
 import { ExperienceCardComponent } from './components/experience-card/experience-card.component';
-import { EducationCardComponent } from './components/education-card/education-card.component';
 import { SkillsCardComponent } from './components/skills-card/skills-card.component';
 import { HobbyCardComponent } from './components/hobby-card/hobby-card.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
@@ -19,6 +18,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { StickerComponent } from './components/sticker/sticker.component';
+import { ProgressBarComponent } from './components/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -29,11 +29,11 @@ import { StickerComponent } from './components/sticker/sticker.component';
     InfoComponent,
     LinkComponent,
     ExperienceCardComponent,
-    EducationCardComponent,
     SkillsCardComponent,
     HobbyCardComponent,
     ProjectCardComponent,
-    StickerComponent
+    StickerComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,

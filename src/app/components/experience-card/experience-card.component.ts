@@ -52,4 +52,8 @@ export class ExperienceCardComponent implements OnInit {
     this.openTab = !this.openTab;
   }
 
+  isLogoSvg() {
+    return this.data.logo.logoUrl.split('.')[1] === "svg";
+  }
+
 }

@@ -10,3 +10,5 @@ export enum MenuType {
     HOBBIES,
     PROJECTS
 }
+
+export const MOBILE_WIDTH_SIZE = 1000;

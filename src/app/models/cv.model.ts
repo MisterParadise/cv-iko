@@ -9,7 +9,7 @@ export type CvModelLang = {
     infos: Infos,
     links?: Link[],
     experiences?: Experience[],
-    education?: Education[],
+    education?: Experience[],
     skills?: Skill[],
     hobbies?: Hobby[],
     projects?: Project[]
@@ -31,12 +31,13 @@ export type Link = {
 
 export type Experience = {
     title: string,
-    company: string,
+    institution: string,
     location: string,
     descriptions?: string[],
     dateIn: string,
     dateOut: string,
-    stickers?: Sticker[]
+    stickers?: Sticker[],
+    logo?: Logo
 }
 
 export type Education = {
@@ -50,7 +51,8 @@ export type Education = {
 
 export type Skill = {
     title: string,
-    stickers: Sticker[]
+    progressBars?: ProgressBar[]
+    stickers?: Sticker[]
 }
 
 export type Hobby = {
@@ -65,4 +67,15 @@ export type Project = {
 export type Sticker = {
     label: string
     logoUrl?: string
+}
+
+export type ProgressBar = {
+    label: string,
+    rating: number
+}
+
+export type Logo = {
+    logoUrl: string,
+    logoWidth?: number,
+    logoHeight?: number
 }
