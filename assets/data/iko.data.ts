@@ -12,54 +12,127 @@ export const IKO_DATA:  CvModel = {
         experiences: [
             {
                 title:"Développeur Full-Stack",
-                company:"Sopra Steria",
+                institution:"Sopra Steria",
                 location:"Nantes, France",
                 dateIn: "02/2019",
                 dateOut: "Aujourd'hui",
-                description: "MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION MA DESCRIPTION ",
-                stickers: [
-                    {
-                        label: "Angular",
+                descriptions: [ 
+                    "07/2020 - Aujourd'hui : Développeur Big Data pour un client dans le secteur de l'énergie.", 
+                    "02/2019 - 07/2020 : Développeur fullstack sur un portail web de suivi de consommation énergétique."
+                ],
+                logo: {
+                    logoUrl: "assets/img/Sopra_Steria_logo.svg",
+                    logoHeight: 13
+                },
+                stickers: [{
+                        label: "Angular 6",
                         logoUrl: "assets/img/angular.svg"
-                    },
-                    {
+                    }, {
+                        label: "Java",
+                        logoUrl: "assets/img/java.svg"
+                    },  {
+                        label: "HTML5",
+                        logoUrl: "assets/img/html5.svg"
+                    }, {
+                        label: "SCSS",
+                        logoUrl: "assets/img/sass.svg"
+                    }, {
+                        label: "Spring"
+                    }, {
                         label: "Maven"
-                    }, 
-                    {
-                        label: "HTML5"
-                    },
-                    {
-                        label: "CSS3"
-                    },
-                    {
-                        label: "SCSS"
+                    }, {
+                        label: "Git",
+                        logoUrl: "assets/img/git.svg"
+                    }, {
+                        label: "Jenkins",
+                        logoUrl: "assets/img/jenkins.svg"
+                    }, {
+                        label: "Openshift"
+                    }, {
+                        label: "Hadoop"
+                    }, {
+                        label: "SCRUM"
+                    }, {
+                        label: "SAFE"
                     }
                 ]
             },
             {
-                title:"Stagiaire ingénieur biomédical",
-                company:"INL",
+                title: "Stagiaire ingénieur biomédical",
+                institution: "INL",
+                logo: {
+                    logoUrl: "assets/img/inl-cnrs-logo.png"
+                },
                 location: "Villeurbanne, France",
-                dateIn: "01/2016",
-                dateOut: "09/2016",
-                description: "Petit description de ses morts"
+                dateIn: "03/2017",
+                dateOut: "08/2017",
+                descriptions: ["Stage effectué dans le cadre du diplôme d’ingénieur biomédical. Conception et fabrication d'un capteur autoalimenté portable pour le monitoring de la santé. Prise en main de microcontrôleurs basse consommation."]
+            }, {
+                title: "Stagiaire assistant ingénieur",
+                institution: "CAPIO - Polyclinique du beaujolais",
+                location: "Villefranche sur Saône, France",
+                dateIn: "10/2015",
+                dateOut: "01/2016",
+                descriptions: ["Stage effectué dans le cadre du diplôme d’ingénieur biomédical. Mise en place d’une nouvelle GMAO (CARL Software) au sein d’un établissement de soins. Travaux annexes d’assistance à l’ingénieur biomédical de la clinique."]
+            }, {
+                title: "Stagiaire technicien biomédical",
+                institution: "Centre hospitalier du Haut Bugey",
+                location: "Oyonnax, France",
+                dateIn: "07/2015",
+                dateOut: "08/2015",
+                descriptions: ["Stage effectué dans le cadre du diplôme d’ingénieur biomédical. Assistance au technicien biomédical du centre hospitalier."]
+            }, {
+                title: "Stagiaire technicien",
+                institution: "CERN",
+                logo: {
+                    logoUrl: "assets/img/cern-vector-logo.svg"
+                },
+                location: "Genève",
+                dateIn: "03/2014",
+                dateOut: "06/2014",
+                descriptions: ["Stage effectué dans le cadre du DUT Mesures Physiques. Étude et caractérisation d’un nouvel analyseur de gaz en vue d’une utilisation au sein d’un accélérateur de particules."]
             }
         ],
         education: [
             {
                 title: "Ingénieur biomédical",
-                location: "Villeurbanne",
-                dateIn: "09/2014"
+                location: "Villeurbanne, France",
+                logo: {
+                    logoUrl: "assets/img/polytech-logo.svg",
+                    logoHeight: 30
+                },
+                dateIn: "2014",
+                dateOut: "2017",
+                institution: "Polytech Lyon"
             }, 
             {
                 title: "DUT Mesures Physique",
-                location: "Annecy",
-                dateIn: "09/2012"
+                location: "Annecy, France",
+                logo: {
+                    logoUrl: "assets/img/iut-logo.svg",
+                    logoHeight: 30
+                },
+                dateIn: "2012",
+                dateOut: "2014",
+                institution: "Université de Savoie"
             }
         ],
         skills: [
             {
-                title: "Compétences informatiques",
+                title: "Savoir-faire",
+                progressBars: [{
+                    label: "Angular",
+                    rating: 8
+                }, {
+                    label: "Java",
+                    rating: 7
+                }, {
+                    label: "Spark",
+                    rating: 5
+                }, {
+                    label: "Scala",
+                    rating: 4
+                }],
                 stickers: [{
                     label: "Angular",
                     logoUrl: "assets/img/angular.svg"
@@ -69,6 +142,22 @@ export const IKO_DATA:  CvModel = {
                     label: "Spark"
                 }, {
                     label: "Java"
+                }]
+            }, {
+                title: "Savoir-être",
+                stickers: [{
+                    label: "Esprit d'équipe"
+                }, {
+                    label: "Curiosité"
+                }]
+            }, {
+                title: "Langues",
+                progressBars: [{
+                    label: "Français",
+                    rating: 10
+                }, {
+                    label: "English",
+                    rating: 8
                 }]
             }
         ],
